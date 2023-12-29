@@ -1,0 +1,9 @@
+Tree nedir?
+Bir cox search islerine Binary Tree-den istifade olunur. Buna misal olaraq Red Black Tree-ni demek olar.Bunu daha aydin
+basa dusmek ucun Tree papkasnin icindeki sekile baxmaq olar. Sekildeki NIL yazisi eslinde bizim Java-da isletdiyimiz
+null keyword-uynen eynidir. Bu Red Black Tree hansi prinsiple isleyir desek, misalcun biri varki bir bir index-ne gore
+Array-de ededleri gezesen bu Big O-da Time Complexity gore pisdir, ama Tree-de ise Search isi rahatdir. Misalcun 10
+ededin var ve bu 10 ededin icinde hansisa ededi tapmaq isdeyirsen, bunu Red Black Tree-de iki hisseye bolursen ve ilk
+ededden baslayirsan axtarmaga ve 10 dene olan ededin iki hisseye bolunur ve ilk ededinden sora gelen misalcun ilk ededin
+sekilden misal goturek 13-dur ve baxirki 13-den sora gelen boyukdurse saga(red) yox eger 13-den kicikdirse sola(black)
+gedsin bele bele saga(red) sola(black) gede gede eded tapilir veya da sonuncu ededde gedib null(NIL) olur.

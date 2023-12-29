@@ -1,0 +1,42 @@
+LinkedList nedir?
+Data Structures-larda 3-cur LinkedList var. Bunlari asagda yazaq:
+1.) Singly LinkedList
+2.) Circular LinkedList
+3.) Doubly LinkedList
+
+1) Singly LinkedList - Bu asagda yazdigimiz Singliy LinkedList-dir:
+LinkedList pointer prinsipi ile isleyir. Yeniki LinkedList normal Array-ler de ki kimi sirali bir sekilde deyerleri
+index-ler de yerlesmir. LinkedList-de deyerler sanki Integer tipinde bir LinkedList yaratdin ve add() metoduynan icine
+10 deyerin verdin, demeli deyer verdik de LinkedList-de deyerler bele siralanir. Tessevur edek ki 10 deyerin verdik de
+iki dene ic ice xana yaranir yeniki ic ice iki dene index xanasi deye bilerik, bu iki xanada birinci yer vaule, ikinci
+yer ise pointer adlanir. Yeniki senin add etdiyin 10 deyeri gedib dusur birinci xanaya(value) ve ikinci xana ise
+gozleme noqtesi(pointer) olur. Sonra deyek ki yeni bir 15 deyerin add etdin onda yenede 2 dene xana yaranir ve senin
+ilk yaratdigin xanadaki pointer(gozleme noqtesi) gedir senin 2-ci yaratdigin xanadaki value xanasina 15 deyerin elave
+edir ve 2-ci yaratdigin xanadaki pointer-de gozlemede dayanir eger sen yene bir deyer add etmesen bu sonuncu pointer
+avtomatik null olur. Birde LinkedList-de ilk yaratdigin xanaya Head deyilir. Yeni ki basda duran ilk xana. Men dediyim
+bu misalda her yaranan bu value ve pointer-e xana deyirem basa dusmek ucun ama bunlara eslinde Node-lar deyilir.Misalcun
+3 dene xana yaratmisansa bu xanalar basdan(Head) sona dogru Node1, Node2, Node3 olaraq siralanir. Qiasaca LinkedList-
+lerin isleme prinsipini bir birine halqa kimi kecen zencirler(Node-lar) kimi tessevur ede bilerik.Birde LinkedList-in
+deyerleri Big O-ya gore memory-de Linear Time - O(n) istifade edir. LinkedList-de Search iside O(n), Access iside O(n),
+Insert iside O(n) ve Delete iside O(n)-dir. LinkedList-in isleme prinsipne basa dusmek ucun LinkedList papkasinin
+icinde ki sekillere baxib daha da aydin basa dusmek olar.
+
+2) Circular LinkedList - Bu asagda yazdigimiz Circular LinkedList-dir:
+Circular LinkedList-de yuxarda ki kimi Singly LinkedList-le eyni prinsipde isleyir sadece ferqi odur ki adindan da belli
+oldugu kimi Circular(dairevi) bir sekilde isleyir. Yeni ki Singly LinkedList-de xatirlasaq 1-ci Node Head adlanirdi ve
+sonuncu Node-da null olur. Circular LinkedList-de ise girilen value-lar Head Node-dan baslayir sonra pointer-pointer
+yeni next-next deyerek davam edir sounucu Node-a gelib catanda dovr eleyib yeni qaiyidir basda ki Head Node-a. Bu
+Circular LinkedList-i yazacagimiz koddan asli olaraq yeni quracagimiz alqoritmada istifade ede bilerik. Circular
+LinkedList-i vizual olaraq gorub basa dusmek ucun Circular_LinkedList papkasinin icinde ki sekile baxib daha da aydin
+basa dusmek olar.
+
+3) Doubly LinkedList - Bu asagda yazdigimiz Doubly LinkedList-dir:
+Doubly LinkedList-in digerlerinden ferqi odur ki bunda digerlerinden ferqli olaraq her Node-da 2 dene value ve pointer(
+next) xanasi yox 3 dene xana olur previous, value ve pointer(next). Diger LinkedList-ler de yalniz ireli getmek olurdu
+misalcun Singly LinkedList-de next pointer, next pointer deyerek sonunda gedib null pointer-de dayanirdi ve ya da
+Circular LinkedList-de next pointer, next pointer gedib sonda ki Node-dan donub yeniden basda duran(Head) Node-a
+qayidirdi ama Doubly LinkedList-de ise yuxarda yazdigim kimi 2 dene previous ve next pointer-i oldugu ucun digerlerinden
+ferqli olaraq Node-lar arasinda previous pointer vasitesi ile ozunden evvel ki Node qayitmaq olur. Umumiyetle Node-lar
+arasinda gezmek olur. Bunu daha aydin basa busmek ucun Doubly_LinkedList papkasinin icinde ki sekle baxib basa dusmek
+olar.
+

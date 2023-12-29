@@ -1,0 +1,14 @@
+/*Graph Data Structures-unun icinde 3 dene esas prinsip var asagda yazaq:
+    Graph pakteinin icinde sekil var. Bu asagda yazilanlari aydin basa dusmek ucun sekile baxmaq olar.
+    *1)Vertex - Sekile baxsaq gorerik ki sekilde A,B,C,D,E,F var. Bu node-lara Vertex deyilir.
+     2)Edge   - Sekile baxsaq orda A ile B arasinda sora D ile F arasinda baglantilar var. Bu baglantilarin hamisina
+                Edge deyilir.
+     Eger A ile B arasinda, E ile F arasinda veya butun node-lar arasinda reqem olaraq bir deyer varsa bunlarada
+     weight(yuk) deyilir.Bu weight sayisina gorede problemler daha qarisiq ola biler veya da weight-in sayisi azdirsa
+     problemler daha asand ola biler.
+
+     Graph-in 20 dene ferqli xususiyetleri var bunlari asagda yazaq:
+     1.Null Graph          |  5.Connected Graph    |  9.Cycle Graph    |  13.Infinite Graph  |  17.Multi Graph
+     2.Trivial Graph       |  6.Disconnected Graph |  10.Cyclic Graph  |  14.Bipartite Graph |  18.Pseudo Graph
+     3.Non-directed Graph  |  7.Regular Graph      |  11.Acyclic Graph |  15.Planar Graph    |  19.Euler Graph
+     4)Directed Graph      |  8.Complete Graph     |  12.Finite Graph  |  16.Simple Graph    |  20.Hamiltonian Graph */

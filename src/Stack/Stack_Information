@@ -1,0 +1,19 @@
+/*Stack FILO-(Last In First Out) prinsipi ile isleyir.
+     Bu Stack classinin 3 dene esas metodu var asagda yazaq:
+     1)push() - bu metod stack-e yeni deyer vermek ucundur.
+     2)pop()  - bu metod LIFO prinsipine uygun olaraq en son elave etdiyiniz deyeri cekmek(cixartmaq) ucundur.
+     3)peek() - bu metodda pop() metodu kimi deyeri cekmek ucundur. Ama bunun pop() metodundan ferqi odurki peek()
+                metodu sadece sonuncu deyerin referansini ceker ama deyer ozu yerinde qalar.
+
+     Stack Data Structure-nun isleme prinsipinde birinci bos bir yer olur(empty stack). Sonra sen push() metodunu
+     cagiraraq icine bir deyer yazdiqda, deyek ki yuxarda yazdiglarima baxaq birinci 12 deyerin push etdim sorada 2
+     deyerin push etdik bu 2 deyeri gedib 12-nin ustunde dayanir sorada 56-ni push etdikde 56-da gedib 12-nin ustunde
+     dayanir sanki bir sutun kimi fikirlesek her push etdikde gedib deyer ozunnen evvelkinin ustunde dayanir.
+
+     Bu yuxarda yazdigim stack-dan(sutun kimi ust-uste dayanan deyerlerden) bir deyeri cekmek(cixartmaq) isdedikde
+     pop() metodundan istifade olunur. Bu pop() metoduynanda deyeri cekmek istedikde de bu Stack classinin bir isleme
+     pirinsipi var hemin bu prinsiple cekilir deyer, bu prinsipede LIFO-(Last In First Out) deyilir. Yeniki bu LIFO-nu
+     bele aciqlayaq, misalcun 4,7,9 deyerlerimiz var biz Stack-deki prinsiple deyerlerimizi cixartmak isdedikde
+     LIFO bele isleyir Sonuncu Giren Birinci Cixir cunki 4-den sonra iki dene deyer var. Gerek olar cixsin ki 4 cixa
+     bilsin. Ona gorede birinci 9 cixir, sora 7, sondada 4. Daha da aydin basa dusmek ucun Stack papkasinin icindeki
+     sekile baxmaq olar. */

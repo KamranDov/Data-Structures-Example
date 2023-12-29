@@ -1,0 +1,38 @@
+Big O Notation nedir?
+Big O Notation yazdigin kodun Time Complexity-sini(isleme murekkebliyi) analiz etmek ucun cox vacib yanasmadir. Bu
+en cox alqoritmalari analiz etmek ucun istifade olunur. Bu Big O Notation-nin da yazilan kodu analiz etmek ucun bezi
+terminleri var. Bu terminleri asagda Time Complexity-ye uygun olaraq yaxsidan pise dogru yazaq:
+
+1) Constant Time    -    O(1)       ----performans cehetden en yaxsi kod yazmaq yolu constant time-dir.
+2) Logarithmic Time -    O(log(n))
+3) Linear Time      -    O(n)       ----bir dene for loop    == Linear Time     O(n)
+Linear-i bir array-de verilmis deyerler kimi de qeyde ede bilerik. Cunki array da deyerler ard arda olur.Linear-da
+ard arda demekdir veya bir xet uzerinde. Linear O(n) en cox Search islerinde isdifade olunur. Cunki misalcun deyek ki
+10 elementli bir array-imiz var, bizde burda 5-ci index-deki elmenti tapmaq isdedikde gerek for loop-dan istifade edek
+butun deyerleri bir bir yoxluyaq 5-ci index-deki deyeri tapmaq ucun, bunuda Linear Time-in yuxarda qabaginda qeyd
+etmisdim ki Linear Time-da bir loop-dan istifade olunur. Qisaca Linear-O(n) en cox search islerinde istifade olunur.
+Bundan elave insert(elave etmek) ve delete(silmek) islerinde de Linear O(n) istifade olunur.
+4) Log Linear Time  -    O(n log(n))
+5) Quadratic Time   -    O(n^2)     ----ic ice nested loop   == Quadratic Time  O(n^2) (girilen deyerin kvadrati qeder)
+6) Exponential Time -    O(2^n)
+7) Factorial Time   -    O(n!)
+
+Bu yuxarda yazdigim terminler haqqinda daha etrafli BigONotation papkasinin icinde sekiller var ordan baxib daha aydin
+basa dusmek olar.
+Bu yuxarda yazdigim terminlerde ki O herfi Big O Notation-daki O herfi demekdir ve terminlerde yazilan n herfi ise
+girilen ededin oclusunu(input size (n)) gosterir. Yeniki n herfi deyisken kimi verilir. Sen for loop-unda bir deyeri
+dovre salanda deyirsenki bu loop-um n defe tekrar olunacaq.
+
+Bir problemin helli ucun yaxsidan pise dogru 3-cur yanasma var. Bunlari asagda yazaq:
+1) Big O Notation - en pis ehtimalla bir problemi Big O ile analiz edib prablemi en yaxsi bir sekilde hell etmek.
+2) Theta - orta hell yolu.
+3) Omega - problemi en yaxsi hell yolu.
+Bu yuxarda yazdiqlarimi basa dusmek ucun bir misal yazaq:
+Deyek ki bizim 10 index-li icinde 5 dene element olan bir massivimiz var. Biz bu massive bir deyer elave etmek isdedikde
+elave etmek isdediyimiz deyeri 0-ci index-se elave etsek gerek butun deyerler ozunden bir sonraki index-e kecsin. Buna
+deyek ki Big O ile yanasma yeni en pis ehtimalla. Sora gelir Theta. Theta ise elave etmek isdediyimiz deyeri 3-ci
+index-den sora elave etsek evvel de dediyimiz kimi 5 dene element varsa onda bir dene surume olacaq bunada deyek Theta
+yeni orta hell yolu. Biri de var Omega. Omega ise evvel de dediyim kimi olcusu 10 dene index-li array-imiz varsa ve
+icinde 5 dene element varsa ve bizde elave bir dene element elave etmek isesek onsuzda 4 dene bos yer varda gel 5-ci
+index-e deyeri elave etde. Bele olsa is cox rahat olacaq, nede elementlerde surusme olmuyacaq. Bunada deyilir en yaxsi
+hell yolu Omega.

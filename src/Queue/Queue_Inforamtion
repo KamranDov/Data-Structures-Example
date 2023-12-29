@@ -1,0 +1,25 @@
+/*Queue FIFO-(First In First Out) prinsipi ile isleyir.
+    * BU Queue-nun 4 dene esas metodu var. Bunlara asagda baxaq:
+
+    * 1)offer() veya add() - deyer vermek ucun istifade olunur.
+
+    * 2)remove() - bu metodun icine girib baxsaq Object classindan bir deyer alir. Yeniki sen bu metod ile deyer silmek
+    * istedikde index-le yox, gerek silmek isdediyin deyerin ozunu yazsan metodun icine misalcun: remove(12).
+
+    * 3)poll() - bu metod ile Queue-nun FIFO prinsipne esasen Birinci Girilen Birinci Cixar. Yeniki yuxarda yazdigim
+    * 6, 12, 32 deyerlerinden sonra poll() metodunu cagirsam FIFO prinsipne esasen birinci 6 deyeri cixacaq bir defe de
+    * poll() metodunu cagirsan bu sefer 12 deyeri cixacaq.
+
+    * 4)peek() - bu metod FIFO prinsipne esasen birinci deyerin referansini goturur ama deyerin ozunu cixartmir.
+
+      Queue qisaca sira demek olar. Sanki her hansisa bir yerde sirada gozleyirsen. Xestexanada, Dovlet idaresinde,
+      konserte daxil olduqda ve s. Queue bu dediyim misallar kimi bir prinsipde isleyir. Queue isleme prinsipini yeni
+      FIFO-nu bu dediyim misallarin usdunden gostererek daha aydin basa dusmek olar. Misalcun gedmisen Asan xidmete
+      sexsiyet vesiqesi almaga ve bu sirada en birinci sen dayanmisan. Sexsiyet alma sirasinda en 1-ci sense demeli
+      ne olacaq Queue-nun prinsipi olacaq yeni First In First Out, yeniki en 1-ci novbede sensen ona gore en 1-ci
+      xidmet gosterilmesi ucun sen eyleseceysen masaya yeni-(First In) sonrada isin qutaracaq durub gedeceysen yeni
+      (First Out) yeni bele daha aydin basa duse bilerik.
+      Queue sirasinda en basda durana front ve sirada en axirda durana ise rear deyilir.
+      Queue sirasina eyni deyer elave olunduqda buna Enqueue(overflow) ve siradan isini gorub cixan deyerlere ise
+      Dequeue(undeflow) deyilir.
+      Queue daha aydin basa dusmek ucun Queue papkasinin icinde ki sekile baxib basa dusmek olar.*/
